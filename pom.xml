@@ -17,11 +17,6 @@
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-logging-juli</artifactId>
-            <version>${tomcat.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
@@ -83,7 +78,7 @@
     <properties>
         <maven-dependency.version>2.8</maven-dependency.version>
         <maven-compiler.version>3.5.1</maven-compiler.version>
-        <tomcat.version>8.5.0</tomcat.version>
+        <tomcat.version>8.5.34</tomcat.version>
         <log4j.version>2.7</log4j.version>
         <hibernate-entitymanager.version>4.3.11.Final</hibernate-entitymanager.version>
         <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
