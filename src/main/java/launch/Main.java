@@ -5,10 +5,15 @@ import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
 public class Main {
+
+    private final static Logger LOG = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) throws Exception {
 
         String webappDirLocation = "src/main/webapp/";
@@ -35,5 +40,6 @@ public class Main {
 
         tomcat.start();
         tomcat.getServer().await();
+        LOG.debug("Tomcat server started successfully!");
     }
 }
